@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supporter Dashboard</title>
+
+  <style>
+    body {
+      font-family: Poppins, sans-serif;
+      background: #f4f6f8;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .section {
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+
+    button {
+      padding: 6px 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .chat {
+      background: #eef;
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    .msg {
+      margin: 6px 0;
+    }
+
+    .user {
+      text-align: left;
+    }
+
+    .supporter {
+      text-align: right;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>🧠 Supporter Dashboard</h2>
+
+<!-- FLAGGED POSTS -->
+<div class="section">
+  <h3>🚩 Flagged Posts</h3>
+  <div id="flagged"></div>
+</div>
+
+<!-- ACTIVE SAFESPACES -->
+<div class="section">
+  <h3>💛 Active SafeSpaces</h3>
+  <div id="rooms"></div>
+</div>
+
+<script type="module" src="supporters.js"></script>
+</body>
+</html>

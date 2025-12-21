@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="data:,">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>SafeSpace</title>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f4fbf8;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    #moods {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 12px;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+
+    #moods button {
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      background: #e9f5f0;
+      font-size: 14px;
+      transition: transform 0.1s ease, background 0.1s ease;
+    }
+
+    #moods button:hover {
+      transform: scale(1.05);
+      background: #dff1ea;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>💛 SafeSpace</h1>
+  <p>How are you feeling right now?</p>
+
+  <div id="moods">
+    <!-- Positive / Neutral -->
+    <button onclick="selectMood('Happy')">😊 Happy</button>
+    <button onclick="selectMood('Calm')">😌 Calm</button>
+    <button onclick="selectMood('Grateful')">🙏 Grateful</button>
+    <button onclick="selectMood('Hopeful')">✨ Hopeful</button>
+    <button onclick="selectMood('Neutral')">😐 Neutral</button>
+
+    <!-- Low / Mild -->
+    <button onclick="selectMood('Tired')">😴 Tired</button>
+    <button onclick="selectMood('Low Mood')">😔 Low</button>
+    <button onclick="selectMood('Confused')">🤔 Confused</button>
+
+    <!-- Distress -->
+    <button onclick="selectMood('Anxious')">😰 Anxious</button>
+    <button onclick="selectMood('Stressed')">😖 Stressed</button>
+    <button onclick="selectMood('Overwhelmed')">😣 Overwhelmed</button>
+    <button onclick="selectMood('Lonely')">🥺 Lonely</button>
+
+    <!-- Strong emotions -->
+    <button onclick="selectMood('Frustrated')">😤 Frustrated</button>
+    <button onclick="selectMood('Angry')">😡 Angry</button>
+    <button onclick="selectMood('Numb')">🫥 Numb</button>
+  </div>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>

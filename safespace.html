@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SafeSpace</title>
+
+  <style>
+    body {
+      font-family: Poppins, sans-serif;
+      background: #f3faf7;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .box {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    #requestBox {
+      background: #fff3cd;
+    }
+
+    #closedBox {
+      background: #f8d7da;
+    }
+
+    #chat {
+      max-width: 600px;
+      margin: auto;
+      display: none;
+    }
+
+    .msg {
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 8px;
+    }
+
+    .user {
+      background: #d1f5e0;
+      text-align: right;
+    }
+
+    .supporter {
+      background: #ffffff;
+      border: 1px solid #ddd;
+    }
+
+    #inputBox {
+      max-width: 600px;
+      margin: auto;
+      margin-top: 10px;
+      display: none;
+      text-align: center;
+    }
+
+    input {
+      width: 70%;
+      padding: 8px;
+    }
+
+    button {
+      padding: 8px 12px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>💛 SafeSpace</h2>
+
+<!-- PENDING -->
+<div id="requestBox" class="box" style="display:none;">
+  <p><b>Supporter wants to talk.</b></p>
+  <button id="acceptBtn">Accept</button>
+  <button id="declineBtn">Decline</button>
+</div>
+
+<!-- CLOSED -->
+<div id="closedBox" class="box" style="display:none;">
+  <p>🛑 SafeSpace is temporarily closed.</p>
+  <button id="reopenBtn">Re-open SafeSpace</button>
+</div>
+
+<!-- CHAT -->
+<div id="chat"></div>
+
+<!-- INPUT -->
+<div id="inputBox">
+  <input id="msgInput" placeholder="Type your message…" />
+  <button id="sendBtn">Send</button>
+  <button id="closeBtn">Close SafeSpace</button>
+</div>
+
+<script type="module" src="safespace.js"></script>
+</body>
+</html>
