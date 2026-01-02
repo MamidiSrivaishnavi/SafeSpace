@@ -12,7 +12,7 @@ import {
 
 /* ================= FIREBASE INIT ================= */
 const firebaseConfig = {
-  apiKey: "AIzaSyCjszAKobObSencoB6xfRm8vKSgTh9lE6w",
+  apiKey: "YOUR_API_KEY",
   authDomain: "safespace-e4b6b.firebaseapp.com",
   projectId: "safespace-e4b6b",
   storageBucket: "safespace-e4b6b.firebasestorage.app",
@@ -137,3 +137,4 @@ onSnapshot(roomsQuery, (snap) => {
     roomsDiv.appendChild(card);
   });
 });
+
