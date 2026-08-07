@@ -194,9 +194,13 @@ Display in Community Feed
 # 🎯 Objectives
 
 - Encourage emotional expression.
+
 - Reduce stigma around mental health.
+
 - Provide anonymous peer support.
+
 - Use AI responsibly to understand emotions.
+
 - Build a safe and inclusive online community.
 
 ---
